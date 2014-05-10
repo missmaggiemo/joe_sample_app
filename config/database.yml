@@ -1,0 +1,19 @@
+
+development:
+  adapter: postgresql
+  database: joe_sample_dev
+  host: localhost
+
+test: &test
+  adapter: postgresql
+  database: joe_sample_test
+  host: localhost
+  
+production:
+  adapter: postgresql
+  database: joe_sample_prod
+  host: localhost
+
+cucumber:
+  <<: *test
+  
