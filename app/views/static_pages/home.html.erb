@@ -1,5 +1,39 @@
+<div id="myCarousel" class="carousel container slide">
+<div class="carousel-inner">
+        <div class="active item one"></div>
+        <div class="item two"></div>
+        <div class="item three"></div>
+</div>
+</div>
+
 <div id="home">
   <div id="welcome" class="jumbotron">
     <h1 id="welcome_h1">Welcome to Cup a Joe's</h1>      
   </div>
 </div>
+
+<% content_for :bottom do %>
+
+<script type="text/javascript">
+  var pics = ["<%= image_url("1.jpg") %>", 
+    "<%= image_url("2.jpg") %>", 
+    "<%= image_url("3.jpg") %>", 
+    "<%= image_url("4.jpg") %>", 
+    "<%= image_url("joe_collage_tiles.png") %>"];
+  var index = 0;
+  $('.background').css('background-image', "url(" + pics[4] + ")");
+  
+  function changeBackground(){
+      $(".background").css("background","url('"+ pics[index] +"')");
+      index++;
+      if (index > pics.length){        
+        index = 0; 
+      }
+  };
+  
+  $(document).ready(function() {
+    setInterval("changeBackground()", 5000);
+  });
+</script>
+
+<% end %>
