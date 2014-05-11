@@ -28,6 +28,12 @@ body {
 .navbar {
   border: none;
   opacity: 0.95;
+  font-size: 120%;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #DCDCDC;
+  font-weight: bold;
 }
 
 #logo {
@@ -59,9 +65,14 @@ body {
   opacity: 0.9;
   background-color: #202020;
   text-align: center;
+  border-radius: 0;
 }
 
 #welcome_h1 {
   color: white;
   opacity: 1;
+}
+
+.glyphicon {
+  margin: 0 10px;
 }
