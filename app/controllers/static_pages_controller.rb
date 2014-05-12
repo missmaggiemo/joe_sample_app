@@ -4,5 +4,20 @@ class StaticPagesController < ApplicationController
     
   end
 
+  def about
+    
+  end
+  
+  def menu
+    
+  end
+  
+  def login
+    
+  end
+  
+  def user
+    
+  end
 
 end

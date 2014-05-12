@@ -35,7 +35,7 @@
   width: 60vw;
   height: 40vh;
   min-height: 270px;
-  margin: 20vh auto;
+  margin: 50px auto;
   opacity: 0.9;
   background-color: #202020;
   text-align: center;
@@ -106,3 +106,14 @@
   transition: opacity 0.5s  !important;
 }
 
+
+
+//about page 
+
+.text-container {
+  background-color: white;
+  opacity: 0.9;
+  padding: 2vw 4vw;
+  margin: 50px auto;
+  min-height: 500px;
+}
