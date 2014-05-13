@@ -1,1 +1,20 @@
-Stuff will go here. I promise.
+<div id="menu" class="container">
+  
+  <div class="text-container">
+    <div id="user_page_header" class="page-header">
+      <h1 id="hi_user">Hi, User!</h1>
+      <div class="gravatar-icon">
+        <img src="http://www.gravatar.com/avatar/<%= Digest::MD5.hexdigest("margaret.m.moreno@gmail.com") %>?s=200">
+      </div>
+    </div>
+    <div id="content-container">
+      <p>User info....</p>
+    </div>
+  </div>
+
+</div>
+
+
+<script type="text/javascript">
+$('body').css('background-image', "url(" + "<%= image_url('2.jpg') %>" + ")")
+</script>
