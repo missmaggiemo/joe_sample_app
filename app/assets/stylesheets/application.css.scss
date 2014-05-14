@@ -43,6 +43,10 @@ body {
   font-size: 120%;
 }
 
+#seat-nav {
+  font-weight: bold;
+}
+
 .navbar-inverse .navbar-brand {
   color: #DCDCDC;
 }
@@ -53,7 +57,7 @@ body {
 
 #welcome {
   width: 60vw;
-  height: 50vh;
+  height: 40vh;
   min-height: 270px;
   margin: 50px auto;
   opacity: 0.9;
@@ -152,3 +156,12 @@ body {
   text-align: right;
 }
 
+
+//menu
+
+.menu-item-div {
+  margin: 20px;
+  font-size: 1.2em;
+  border-bottom: 1px #999 solid;
+  overflow: hidden;
+}
