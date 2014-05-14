@@ -16,6 +16,18 @@
 
 @import "bootstrap";
 
+@font-face {
+  font-family: 'AlfaSlabOne';
+  font-style: normal;
+  src: local('AlfaSlabOne') url('/assets/AlfaSlabOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Yokawerad';
+  font-style: normal;
+  src: local('Yokawerad') url('/assets/Yokawerad.otf') format('opentype');
+}
+
 body {
   background-size: cover;
   -moz-background-size: cover;
@@ -33,23 +45,26 @@ body {
 
 .navbar-inverse .navbar-brand {
   color: #DCDCDC;
-  font-weight: bold;
+}
+
+.logo {
+  font-family: 'Yokawerad';
 }
 
 #welcome {
   width: 60vw;
-  height: 40vh;
+  height: 50vh;
   min-height: 270px;
   margin: 50px auto;
   opacity: 0.9;
   background-color: #202020;
   text-align: center;
   border-radius: 100%;
+  color: white;
 }
 
-#welcome_h1 {
-  color: white;
-//  opacity: 1;
+#welcome h1 {
+  margin: 10px auto;
 }
 
 .glyphicon {
