@@ -5,3 +5,6 @@
 * admin site-- show a sample task list and coffee list
 
 * menu, about, home all live on the same page-- js templates for each 'page', new fragment for each 'page' for correct URLs
+
+* fonts
+
