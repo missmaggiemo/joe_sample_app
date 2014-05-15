@@ -17,6 +17,18 @@
     <%= yield %>
             
     <%= yield :bottom %>
+     
+    <script type="text/javascript">
+      var url = window.location;
+      // console.log(url.href);
+      // Will only work if string in href matches with location
+      $('ul.nav a[href="'+ url.href +'"]').parent().addClass('active');
+      
+      // Will also work for relative and absolute hrefs
+      $('ul.nav a').filter(function() {
+        return this.href == url.href;
+      }).parent().addClass('active');
+    </script> 
         
 </body>
 </html>

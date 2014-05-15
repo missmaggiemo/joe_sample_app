@@ -55,26 +55,6 @@ body {
   font-family: 'Yokawerad';
 }
 
-#welcome {
-  width: 60vw;
-  height: 40vh;
-  min-height: 270px;
-  margin: 50px auto;
-  opacity: 0.9;
-  background-color: #202020;
-  text-align: center;
-  border-radius: 100%;
-  color: white;
-}
-
-#welcome h1 {
-  margin: 10px auto;
-}
-
-.glyphicon {
-  margin: 0 10px;
-}
-
 
 //home background carousel
 
@@ -129,6 +109,33 @@ body {
   -o-transition: opacity 0.5s  !important;
   transition: opacity 0.5s  !important;
 }
+
+//home
+
+#home {
+  height: 100vh;
+}
+
+#welcome {
+  width: 60vw;
+  height: 40vh;
+  min-height: 270px;
+  margin: 50px auto;
+  opacity: 0.9;
+  background-color: #202020;
+  text-align: center;
+  border-radius: 100%;
+  color: white;
+}
+
+#welcome h1 {
+  margin: 10px auto;
+}
+
+.glyphicon {
+  margin: 0 10px;
+}
+
 
 
 //about page 

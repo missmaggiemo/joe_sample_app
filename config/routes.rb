@@ -10,6 +10,12 @@ Rails.application.routes.draw do
   
   get 'user' => 'static_pages#user'
   
+  # get 'change_seat' => 'static_pages#change_seat'
+  
+  
+  
+  
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

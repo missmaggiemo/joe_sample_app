@@ -12,13 +12,40 @@
     </div>
   </div>
 </div>
+<%= render 'static_pages/about' %>
 
 <% content_for :bottom do %>
 
 <script type="text/javascript">
   $(document).ready(function() {
-      $('.carousel').carousel({interval: 5000});
+    $('.carousel').carousel({interval: 5000});
+  });
+    
+
+  $(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        console.log(target.selector);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 300);
+          
+          $('ul.nav a').parent().removeClass('active');
+          
+          $('ul.nav a').filter(function() {
+            return this.href.indexOf(target.selector) !== -1;
+          }).parent().addClass('active');
+          
+          return false;
+          
+        }
+      }
     });
+  });
+        
 </script>
 
 <% end %>
