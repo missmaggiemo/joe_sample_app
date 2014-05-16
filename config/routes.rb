@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   
   get 'user' => 'static_pages#user'
   
+  get 'users/current_users' => 'static_pages#current_users'
+  
   # get 'change_seat' => 'static_pages#change_seat'
   
   

@@ -1,4 +1,4 @@
-<div id="myCarousel" class="carousel slide">
+<div id="homeCarousel" class="carousel slide">
   <div class="carousel-inner">
     <div class="active item one"></div>
     <div class="item two"></div>
@@ -12,6 +12,7 @@
     </div>
   </div>
 </div>
+
 <%= render 'static_pages/about' %>
 
 <% content_for :bottom do %>
@@ -26,15 +27,19 @@
     $('a[href*=#]:not([href=#])').click(function() {
       if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
         var target = $(this.hash);
-        console.log(target.selector);
         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        
         if (target.length) {
+          
+          // scroll if there's a target
           $('html,body').animate({
             scrollTop: target.offset().top
           }, 300);
           
+          // remove all current 'active' from links
           $('ul.nav a').parent().removeClass('active');
           
+          // put the 'active' on the correct link
           $('ul.nav a').filter(function() {
             return this.href.indexOf(target.selector) !== -1;
           }).parent().addClass('active');
